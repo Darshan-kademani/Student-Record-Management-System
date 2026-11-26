@@ -51,6 +51,7 @@ l:
 		{	
 			if(strcmp(check->name,n)==0)
 			flag++;
+		check = check->next;
 		}
 		
 		if(flag>1)
@@ -65,7 +66,7 @@ l:
 			printf("please confirm the student with roll number\n");
 			goto l;
 		}
-		
+		else if(flag == 1){
 		while(del){
 			if(strcmp(del->name,n)==0){
 				if(del == headptr)
@@ -79,6 +80,8 @@ l:
 			prev = del;
 			del = del->next;
 		}
+		}
+		else
 		printf("Name Not found\n");
 	} 
 
