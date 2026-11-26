@@ -17,7 +17,7 @@ void save_file(){
 		fprintf(fp,"%d   %s   %f\n",p->rollno,p->name,p->percentage);
 		p = p->next;
 	}
-	printf("Data saved successfully\n"); 
+	printf("Data saved successfully in file student.dat\n"); 
 	fclose(fp);
 }
 
